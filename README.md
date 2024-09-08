@@ -51,6 +51,9 @@ adwaita-cursors
 adwaita-icon-theme
 adwaita-icon-theme-legacy
 
+### fonts
+ttf-font-awesome
+
 ### needed for hyprpm plugins
 make 
 ninja
