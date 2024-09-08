@@ -63,6 +63,7 @@ pipewire
 pamixer
 pavucontrol
 pango
+fwupdate
 
 ### bluetooth
 bluetooth
