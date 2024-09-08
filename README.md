@@ -33,7 +33,6 @@ hyprcursor
 egl-wayland
 niri
 mako
-fuzzel
 swaylock
 hypr
 gtk2
