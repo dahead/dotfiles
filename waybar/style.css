@@ -2,16 +2,18 @@
     border: none;
     border-radius: 0px;
     /* `ttf-font-awesome` is required to be installed for icons */
-    font-family: "Roboto Mono Medium", Helvetica, Arial, sans-serif;
+    /* font-family: "Roboto Mono Medium", Helvetica, Arial, sans-serif; */
+    font-family: "Source Code Pro";
 
     /* adjust font-size value to your liking: */
-    font-size: 10px;
+    font-size: 14px;
 
     min-height: 0;
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.9);
+    /* background: transparent; */
+    background-color: rgba(0, 0, 0, 0.8);
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: #ffffff;
     /* transition-property: background-color; */
@@ -34,16 +36,11 @@ window#waybar.solo {
 
 /* window#waybar.termite {
     background-color: #000000;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
 } */
 
 #workspaces button {
     /* padding: 0 0.4em; */
-    /* background-color: transparent; */
+    background-color: transparent;
     color: #ffffff;
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
@@ -103,7 +100,7 @@ window#waybar.chromium {
 }
 
 #clock {
-    background-color: #000000;
+    background-color: transparent;
     color: white;
 }
 
@@ -135,26 +132,26 @@ window#waybar.chromium {
 }
 
 label:focus {
-    background-color: #000000;
+    background-color: transparent;
 }
 
 #cpu {
-    background-color: #000000;
+    background-color: transparent;
     color: #ffffff;
 }
 
 #memory {
-    background-color: #000000;
+    background-color: transparent;
     color: white;
 }
 
 #backlight {
-    background-color: #000000;
+    background-color: transparent;
     color:white;
 }
 
 #network {
-    background-color: #000000;
+    background-color: transparent;
     color:white;
 
 }
@@ -164,12 +161,12 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #000000;
+    background-color: transparent;
     color: #ffffff;
 }
 
 #pulseaudio.muted {
-    background-color: #000000;
+    background-color: red;
     color: #ffffff;
 }
 
