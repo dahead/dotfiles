@@ -14,17 +14,17 @@ dotfiles for archlinux desktop setup with hyprland window manager.
 
 ### arch packages
 
-### base linux with nvidia gpu
+#### base linux with nvidia gpu
 iwd
 nano
 linux-headers
 nvidia
 nvidia-utils
 
-### terminal
+#### terminal
 alacritty
 
-### window manager and addons
+#### window manager and addons
 hyprland
 hyprpaper
 hyprutils
@@ -39,25 +39,25 @@ gtk2
 gtk3
 gtk4
 
-### display settings
+#### display settings
 lxappearance
 qt6ct
 qt6-base
 qt6-wayland
 
-### theme
+#### theme
 adwaita-cursors
 adwaita-icon-theme
 adwaita-icon-theme-legacy
 
-### fonts
+#### fonts
 ttf-font-awesome
 
-### needed for hyprpm plugins
+#### needed for hyprpm plugins
 make 
 ninja
 
-### system
+#### system
 openssh
 pipewire
 pamixer
@@ -65,13 +65,13 @@ pavucontrol
 pango
 fwupdate
 
-### bluetooth
+#### bluetooth
 bluetooth
 bluez
 bluez-utils
 blueman
 
-### tools
+#### tools
 firefox
 mpv
 htop
