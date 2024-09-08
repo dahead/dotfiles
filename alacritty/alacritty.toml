@@ -1,5 +1,6 @@
 import = [
-"~/.config/alacritty/monokai.toml"
+"~/.config/alacritty/tokyo-night.toml"
+#"~/.config/alacritty/monokai.toml"
 #"~/.config/alacritty/midnight-haze.toml"
 ]
 
@@ -7,7 +8,19 @@ import = [
 size = 12
 
 [font.normal]
-# family = "D2Coding"
+family = "Source Code Pro"
 
 [window]
-opacity = 0.8
+opacity = 0.9
+decorations = "buttonless"
+dynamic_padding = false
+
+[window.padding]
+x = 15
+y = 15
+
+# spawn new instance
+[keyboard]
+bindings = [
+   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
+]
