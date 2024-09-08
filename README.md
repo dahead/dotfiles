@@ -1,12 +1,13 @@
-## dotfiles for archlinux desktop setup with hyprland window manager
+dotfiles for archlinux desktop setup with hyprland window manager
 
 ## hyprland:
 https://hyprland.org/
 https://hyprland.org/plugins/
 
-## Archlinux packages:
+### Archlinux packages:
 
-###base linux with nvidia gpu
+### base linux with nvidia gpu
+iwd
 nano
 linux-headers
 nvidia
@@ -68,5 +69,5 @@ gvfs
 ffmpegthumbnailer
 secrets
 
-# games
+### games
 steam
