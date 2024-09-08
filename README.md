@@ -9,6 +9,11 @@ dotfiles for archlinux desktop setup with hyprland window manager.
 * https://hyprland.org/
 * https://hyprland.org/plugins/
 
+### terminal alacritty
+* https://alacritty.org/
+* https://github.com/alacritty/alacritty
+* https://wiki.archlinux.org/title/Alacritty
+
 ### waybar
 * https://github.com/Alexays/Waybar
 
