@@ -1,8 +1,13 @@
-dotfiles for archlinux desktop setup with hyprland window manager
+dotfiles for archlinux desktop setup with hyprland window manager.
 
-## hyprland:
-https://hyprland.org/
-https://hyprland.org/plugins/
+### arch linux
+* https://archlinux.org/
+* https://wiki.archlinux.org/title/Archinstall
+
+### hyprland
+* https://github.com/hyprwm
+* https://hyprland.org/
+* https://hyprland.org/plugins/
 
 ### Archlinux packages:
 
