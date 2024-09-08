@@ -75,6 +75,8 @@ htop
 thunar
 gvfs
 ffmpegthumbnailer
+net-tools
+traceroute
 secrets
 
 ### games
