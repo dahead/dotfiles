@@ -1,11 +1,6 @@
-// This config is in the KDL format: https://kdl.dev
-// "/-" comments out the following node.
-// Check the wiki for a full description of the configuration:
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Overview
-
 // Input device configuration.
-// Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
+
 input {
     keyboard {
         xkb {
@@ -41,11 +36,11 @@ input {
     }
 
     // Uncomment this to make the mouse warp to the center of newly focused windows.
-    // warp-mouse-to-focus
+    warp-mouse-to-focus
 
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
-    // focus-follows-mouse max-scroll-amount="0%"
+    focus-follows-mouse max-scroll-amount="0%"
 }
 
 // You can configure outputs by their name, which you can find
@@ -115,6 +110,7 @@ layout {
 
     // You can change the default width of the new windows.
     default-column-width { proportion 0.5; }
+
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
@@ -132,7 +128,7 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        // off
+        off
 
         // How many logical pixels the ring extends out from the windows.
         width 4
@@ -170,7 +166,7 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         off
 
-        width 4
+        width 2
         active-color "#ffc87f"
         inactive-color "#505050"
 
@@ -191,6 +187,12 @@ layout {
     }
 }
 
+// dh
+// window-rule {
+//    geometry-corner-radius 12
+//    clip-to-geometry true
+// }
+
 // Add lines like this to spawn processes at startup.
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
@@ -198,10 +200,17 @@ layout {
 // spawn-at-startup "alacritty" "-e" "fish"
 // spawn-at-startup "alacritty"
 
+// use waybar
+spawn-at-startup "waybar"
+spawn-at-startup "thunar" "--daemon"
+
+// wallpaper tool from hyprland
+spawn-at-startup "hyprpaper"
+
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
 // Additionally, clients will be informed that they are tiled, removing some rounded corners.
-prefer-no-csd
+// prefer-no-csd
 
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
@@ -241,11 +250,33 @@ window-rule {
 /-window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
     block-out-from "screen-capture"
-
     // Use this instead if you want them visible on third-party screenshot tools.
     // block-out-from "screencast"
+}
+
+// dh
+window-rule {
+    match app-id=r#"^org\.mozilla\.firefox$"#
+    open-maximized true
+    // open-fullscreen true
+}
+
+// dh steam window rule
+window-rule {
+    match title="cage"
+    // match app-id=r#"^org\.steam\.Steam$"#
+
+    // Properties that apply once upon window opening.
+    // open-on-workspace "Game"
+    open-maximized true
+    open-fullscreen true
+
+    geometry-corner-radius 0
+    clip-to-geometry true
+    draw-border-with-background false
+    opacity 1.0
+    variable-refresh-rate true
 }
 
 binds {
@@ -264,8 +295,8 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T { spawn "alacritty"; }
-    Mod+D { spawn "wofi"; }
+    Mod+Return { spawn "kitty"; }
+    Mod+R { spawn "wofi"; }
     Super+Alt+L { spawn "swaylock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
@@ -427,8 +458,10 @@ binds {
     // Mod+BracketLeft  { consume-or-expel-window-left; }
     // Mod+BracketRight { consume-or-expel-window-right; }
 
-    Mod+R { switch-preset-column-width; }
-    Mod+Shift+R { reset-window-height; }
+    // Mod+R { switch-preset-column-width; }
+    // Mod+Shift+R { reset-window-height; }
+    Mod+Ctrl+R { switch-preset-column-width; }
+    // Mod+Ctrl+E { switch-preset-column-height; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
     Mod+C { center-column; }
@@ -466,4 +499,10 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+
+
+    // dh
+
+    // dh: niri/steam
+    Mod+Ctrl+F12 { spawn "cage" "steam"; }
 }
