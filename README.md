@@ -85,6 +85,7 @@ swaylock
 gtk2
 gtk3
 gtk4
+gnome-themes-extra
 
 #### display settings
 nwg-look
