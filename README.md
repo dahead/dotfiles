@@ -49,7 +49,7 @@ gtk3
 gtk4
 
 #### display settings
-lxappearance
+nwg-look
 qt6ct
 qt6-base
 qt6-wayland
