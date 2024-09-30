@@ -20,6 +20,13 @@ dotfiles for archlinux desktop setup with hyprland window manager.
 ### hyprland installation
 ```sudo pacman -S gdb ninja gcc cmake meson cpio libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols cairo pango seatd libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info tomlplusplus hyprlang hyprcursor hyprwayland-scanner xcb-util-errors hyprutils-git```
 
+### Dark mode
+Dark mode is achived via [Adawaita-Dark theme](https://aur.archlinux.org/packages/adwaita-dark) and [nwg-look](https://github.com/nwg-piotr/nwg-look).
+Thunar for example did not go dark until nwg-look was installed and configured.
+
+### Steam
+Steam is run through [cage](https://www.hjdskes.nl/projects/cage/) a wayland kiosk app. Currently (and even with cage) steam has a lot of display errors in the GUI.
+
 ### arch packages
 
 #### base linux with nvidia gpu
@@ -93,3 +100,4 @@ secrets
 
 ### games
 steam
+cage
