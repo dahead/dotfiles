@@ -122,6 +122,7 @@ firefox
 mpv
 htop
 thunar
+thunar-volman
 gvfs
 ffmpegthumbnailer
 net-tools
