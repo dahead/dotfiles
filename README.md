@@ -74,6 +74,7 @@ hyprutils
 hyprwayland-scanner
 hyprcursor
 xdg-desktop-portal-hyprland
+otf-font-awesome
 
 #### window manager addons
 waybar
