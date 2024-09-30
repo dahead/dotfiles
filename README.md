@@ -68,16 +68,19 @@ alacritty
 
 #### window manager and addons
 hyprland
+hyprpm
 hyprpaper
 hyprutils
 hyprwayland-scanner
 hyprcursor
+xdg-desktop-portal-hyprland
+
+#### window manager addons
 waybar
 niri
 mako
 wofi
 swaylock
-hypr
 gtk2
 gtk3
 gtk4
@@ -110,7 +113,6 @@ pango
 fwupd
 
 #### bluetooth
-bluetooth
 bluez
 bluez-utils
 blueman
