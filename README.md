@@ -34,14 +34,34 @@ Thunar for example did not go dark until nwg-look was installed and configured.
 ### Steam
 Steam is run through [cage](https://www.hjdskes.nl/projects/cage/) a wayland kiosk app. Currently (and even with cage) steam has a lot of display errors in the GUI.
 
+### nvidia
+
+```/etc/default/grub```
+
+add
+
+```GRUB_CMDLINE_LINUX_DEFAULT="xxx nvidia_drm.modeset=1 xxx```
+
+```/etc/mkinitcpio.conf```
+
+add this to the MODULES section:
+
+```MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)```
+
+
+
 ### arch packages
 
-#### base linux with nvidia gpu
+#### base linux
 iwd
 nano
+
+#### nvidia
 linux-headers
 nvidia
 nvidia-utils
+egl-wayland
+lib32-nvidia-utils
 
 #### terminal
 alacritty
@@ -52,10 +72,10 @@ hyprpaper
 hyprutils
 hyprwayland-scanner
 hyprcursor
-egl-wayland
 waybar
 niri
 mako
+wofi
 swaylock
 hypr
 gtk2
@@ -75,6 +95,7 @@ adwaita-icon-theme-legacy
 
 #### fonts
 ttf-font-awesome
+ttf-font-liberation
 
 #### needed for hyprpm plugins
 make 
@@ -86,7 +107,7 @@ pipewire
 pamixer
 pavucontrol
 pango
-fwupdate
+fwupd
 
 #### bluetooth
 bluetooth
