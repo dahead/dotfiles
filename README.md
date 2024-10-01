@@ -50,6 +50,11 @@ add this to the MODULES section:
 
 
 
+### Problems
+
+* When steam starts and gets stuck in a boot-loop where you only see the login screen and then it closes and repeats: this may sound strange, but this happens (Oct 24) when there is no cursor set in your desktop environment. After I installed nwg-look instead of lxappearance this happend. So set the cursor via nwg-look and steam should start.
+
+
 ### arch packages
 
 #### base linux
