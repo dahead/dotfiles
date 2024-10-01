@@ -130,6 +130,9 @@ mpv
 htop
 thunar
 thunar-volman
+tumbler
+ffmpegthumbnailer
+unzip
 gvfs
 ffmpegthumbnailer
 net-tools
