@@ -15,17 +15,17 @@ input {
 
     // Next sections include libinput settings.
     // Omitting settings disables them, or leaves them at their default values.
-    touchpad {
-        // off
-        tap
-        // dwt
-        // dwtp
-        natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "two-finger"
-        // disabled-on-external-mouse
-    }
+    //touchpad {
+    //    // off
+    //    tap
+    //    // dwt
+    //    // dwtp
+    //    natural-scroll
+    //    // accel-speed 0.2
+    //    // accel-profile "flat"
+    //    // scroll-method "two-finger"
+    //    // disabled-on-external-mouse
+    //}
 
     mouse {
         // off
@@ -36,7 +36,7 @@ input {
     }
 
     // Uncomment this to make the mouse warp to the center of newly focused windows.
-    warp-mouse-to-focus
+    // warp-mouse-to-focus
 
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
@@ -179,12 +179,15 @@ layout {
     // Left and right struts will cause the next window to the side to always be visible.
     // Top and bottom struts will simply add outer gaps in addition to the area occupied by
     // layer-shell panels and regular gaps.
-    struts {
-        left 32
-        right 32
-        top 32
-        bottom 32
-    }
+    
+    // dh: border (gab) around the screen
+    //struts {
+    //    left 32
+    //    right 32
+    //    top 32
+    //    bottom 32
+    //}
+
 }
 
 // dh
@@ -203,6 +206,7 @@ layout {
 // dh use waybar
 spawn-at-startup "waybar"
 spawn-at-startup "thunar" "--daemon"
+
 // dh use wallpaper tool from hyprland
 spawn-at-startup "hyprpaper"
 
@@ -221,14 +225,22 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // screenshot-path null
 
 // Animation settings.
-// The wiki explains how to configure individual animations:
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Animations
 animations {
-    // Uncomment to turn off all animations.
     // off
 
-    // Slow down all animations by this factor. Values below 1 speed them up instead.
-    // slowdown 3.0
+    // dh: slow down the opening window animation
+    window-open {
+        duration-ms 1000
+        curve "ease-out-expo"
+    }
+
+    workspace-switch {
+        spring damping-ratio=2.0 stiffness=1000 epsilon=0.0001
+    }
+
+    //window-resize {
+    //    spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
+    //}
 }
 
 // Window rules let you adjust behavior for individual windows.
@@ -261,6 +273,29 @@ window-rule {
     open-maximized true
     // open-fullscreen true
 }
+
+window-rule {
+   // match title="^steam"
+   match app-id="wlroots"   
+   match is-active=false
+
+   open-fullscreen true
+   open-maximized true
+   open-on-workspace "game"
+
+   draw-border-with-background true
+   opacity 1.0
+   block-out-from "screencast"
+   variable-refresh-rate true
+
+   geometry-corner-radius 0
+}
+
+//dh: make inactive windows transparent
+//window-rule {
+    // match is-active=false
+    // opacity 0.8
+//}
 
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
@@ -300,19 +335,21 @@ binds {
     Mod+Down  { focus-window-down; }
     Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
-    Mod+H     { focus-column-left; }
-    Mod+J     { focus-window-down; }
-    Mod+K     { focus-window-up; }
-    Mod+L     { focus-column-right; }
+    
+    //Mod+H     { focus-column-left; }
+    //Mod+J     { focus-window-down; }
+    //Mod+K     { focus-window-up; }
+    //Mod+L     { focus-column-right; }
 
     Mod+Ctrl+Left  { move-column-left; }
     Mod+Ctrl+Down  { move-window-down; }
     Mod+Ctrl+Up    { move-window-up; }
     Mod+Ctrl+Right { move-column-right; }
-    Mod+Ctrl+H     { move-column-left; }
-    Mod+Ctrl+J     { move-window-down; }
-    Mod+Ctrl+K     { move-window-up; }
-    Mod+Ctrl+L     { move-column-right; }
+    
+    //Mod+Ctrl+H     { move-column-left; }
+    //Mod+Ctrl+J     { move-window-down; }
+    //Mod+Ctrl+K     { move-window-up; }
+    //Mod+Ctrl+L     { move-column-right; }
 
     // Alternative commands that move across workspaces when reaching
     // the first or last window in a column.
@@ -326,23 +363,25 @@ binds {
     Mod+Ctrl+Home { move-column-to-first; }
     Mod+Ctrl+End  { move-column-to-last; }
 
+    // dh: commented out, does not work
     // Mod+Shift+Left  { focus-monitor-left; }
     // Mod+Shift+Down  { focus-monitor-down; }
     // Mod+Shift+Up    { focus-monitor-up; }
     // Mod+Shift+Right { focus-monitor-right; }
-    Mod+Shift+H     { focus-monitor-left; }
-    Mod+Shift+J     { focus-monitor-down; }
-    Mod+Shift+K     { focus-monitor-up; }
-    Mod+Shift+L     { focus-monitor-right; }
+    // Mod+Shift+H     { focus-monitor-left; }
+    // Mod+Shift+J     { focus-monitor-down; }
+    // Mod+Shift+K     { focus-monitor-up; }
+    // Mod+Shift+L     { focus-monitor-right; }
 
-    Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
-    Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
-    Mod+Shift+Ctrl+Up    { move-column-to-monitor-up; }
-    Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
-    Mod+Shift+Ctrl+H     { move-column-to-monitor-left; }
-    Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
-    Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
-    Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
+    // dh: commented out, no second monitor available
+    // Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
+    // Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
+    // Mod+Shift+Ctrl+Up    { move-column-to-monitor-up; }
+    // Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
+    // Mod+Shift+Ctrl+H     { move-column-to-monitor-left; }
+    // Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
+    // Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
+    // Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Shift+Ctrl+Left  { move-window-to-monitor-left; }
@@ -354,8 +393,18 @@ binds {
 
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
+    
     Mod+U              { focus-workspace-down; }
     Mod+I              { focus-workspace-up; }
+    
+    // dh: navigate workspaces/windows with Mod+Ctrl+Shift up/down left/right
+    Mod+Shift+Ctrl+Up   { focus-workspace-up; }
+    Mod+Shift+Ctrl+Down { focus-workspace-down; }
+    Mod+Shift+Ctrl+Left { focus-column-left; }
+    Mod+Shift+Ctrl+Right { focus-column-right; }
+    // not possible...
+    // Mod+Ctrl+Up { focus-workspace-up; } xxx
+
     Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
     Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
     Mod+Ctrl+U         { move-column-to-workspace-down; }
@@ -368,10 +417,11 @@ binds {
     // dh
     // Mod+Shift+Left	{ move-column-to--left; }
 
-    Mod+Shift+Page_Down { move-workspace-down; }
-    Mod+Shift+Page_Up   { move-workspace-up; }
-    Mod+Shift+U         { move-workspace-down; }
-    Mod+Shift+I         { move-workspace-up; }
+    // dh commented out... seems to have no effect
+    // Mod+Shift+Page_Down { move-workspace-down; }
+    // Mod+Shift+Page_Up   { move-workspace-up; }
+    // Mod+Shift+U         { move-workspace-down; }
+    // Mod+Shift+I         { move-workspace-up; }
 
     // You can bind mouse wheel scroll ticks using the following syntax.
     // These binds will change direction based on the natural-scroll setting.
@@ -383,6 +433,11 @@ binds {
     Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
     Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
     Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+
+    // dh: Todo: 
+    // Ctrl+Alt+Up cooldown-ms=100 { focus-workspace-up; }
+    // Ctrl+Alt+Down cooldown-ms=100 { focus-workapce-down; }
+
 
     Mod+WheelScrollRight      { focus-column-right; }
     Mod+WheelScrollLeft       { focus-column-left; }
@@ -436,19 +491,21 @@ binds {
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
 
     // Switches focus between the current and the previous workspace.
-    // Mod+Tab { focus-workspace-previous; }
+    Mod+Tab { focus-workspace-previous; }
 
     Mod+Comma  { consume-window-into-column; }
     Mod+Period { expel-window-from-column; }
 
     // There are also commands that consume or expel a single window to the side.
-    // Mod+BracketLeft  { consume-or-expel-window-left; }
-    // Mod+BracketRight { consume-or-expel-window-right; }
+    Mod+BracketLeft  { consume-or-expel-window-left; }
+    Mod+BracketRight { consume-or-expel-window-right; }
 
+    // dh todo remap
     // Mod+R { switch-preset-column-width; }
     // Mod+Shift+R { reset-window-height; }
-    Mod+Ctrl+R { switch-preset-column-width; }
+    // Mod+Ctrl+R { switch-preset-column-width; }
     // Mod+Ctrl+E { switch-preset-column-height; }
+    
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
     Mod+C { center-column; }
@@ -476,17 +533,19 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
+    // screenshots
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
     // The quit action will show a confirmation dialog to avoid accidental exits.
-    Mod+Shift+E { quit; }
+    Mod+M { quit; }
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
-    Mod+Shift+P { power-off-monitors; }
+    // Mod+Shift+P { power-off-monitors; }
 
     // dh: spawn steam in cage
-    Mod+Ctrl+F12 { spawn "cage" "steam"; }
+    // Mod+Ctrl+F12 { spawn "cage" "steam"; } // steam --bigpicture
+    Mod+Ctrl+F12 { spawn "bash" "-c" "~/.config/niri/startsteam.sh"; }
 }
