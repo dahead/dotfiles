@@ -2,15 +2,16 @@
 
 {
 	"layer": "top",
-
 	"position": "top",
 
 	"modules-left": [
 		"hyprland/workspaces",
+		"niri/workspaces",
 	],
 
 	"modules-right": [
 		"pulseaudio",
+		"bluetooth",
 		"memory",
 		"cpu",
 		"network",
@@ -34,6 +35,23 @@
 	  },
 	  "sort-by-number": true
 	},
+
+        "niri/workspaces": {
+          "format": "{icon}",
+          "disable-scroll": true,
+          "on-click": "activate",
+          "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "active": "",
+            "default": ""
+          },
+          "sort-by-number": true
+        },
 
 	"clock": {
 		"format": "{:%Y-%m-%d | %H:%M}",
@@ -62,6 +80,23 @@
 		"scroll-step": 5,
 		"on-click-right": "pamixer -t",
 		"on-click": "pavucontrol"
+	},
+
+	"bluetooth": {
+		// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+		"format": " {status}",
+		"format-disabled": "", // an empty format will hide the module
+		"format-connected": " {num_connections} connected",
+		"tooltip-format": "{controller_alias}\t{controller_address}",
+		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+                "format-alt": "bluetooth: {status}",
+                //"format-icons": {
+                //     "enabled": "",
+                //     "disabled": ""
+                //},
+		"on-click": 	  "bluetoothctl connect A0:A3:09:3E:C6:C4",
+		"on-click-right": "bluetoothctl disconnect A0:A3:09:3E:C6:C4",
 	},
 
 	"memory": {
