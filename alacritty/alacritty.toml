@@ -1,25 +1,36 @@
 import = [
-"~/.config/alacritty/tokyo-night.toml"
-#"~/.config/alacritty/monokai.toml"
-#"~/.config/alacritty/midnight-haze.toml"
+	"~/.config/alacritty/tokyo-night.toml"
+	#"~/.config/alacritty/monokai.toml"
+	#"~/.config/alacritty/midnight-haze.toml"
 ]
 
+live_config_reload=true
+
 [font]
-size = 12
+size = 14
 
 [font.normal]
 family = "Source Code Pro"
 
 [window]
-opacity = 0.9
-decorations = "buttonless"
-dynamic_padding = false
+# title="Alacritty"
+# startup_mode="Fullscreen"
+# opacity = 0.9
+# decorations = "buttonless"
+# decorations = "Full"
+# dynamic_padding = false
+# blur = true
+
+[selection]
+save_to_clipboard=true
+
+[cursor]
 
 [window.padding]
-x = 15
-y = 15
+x = 0
+y = 0
 
-# spawn new instance
+# dh spawn new instance in current folter with CTRL+SHIFT+RETURN
 [keyboard]
 bindings = [
    { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
