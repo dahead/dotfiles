@@ -80,6 +80,7 @@ hyprwayland-scanner
 hyprcursor
 xdg-desktop-portal-hyprland
 otf-font-awesome
+brightnessctl
 
 #### window manager addons
 waybar
