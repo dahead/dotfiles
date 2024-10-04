@@ -113,12 +113,14 @@ make
 ninja
 
 #### system
+man
 openssh
 pipewire
 pamixer
 pavucontrol
 pango
 fwupd
+cmus
 
 #### bluetooth
 bluez
