@@ -48,6 +48,7 @@ layout {
     gaps 16
 
     struts {
+
          left 8
          right 8
          top 8
@@ -62,6 +63,7 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "thunar" "--daemon"
 spawn-at-startup "hyprpaper"
+spawn-at-startup "mako"
 
 // dh: TEST! wayland
 environment {
@@ -120,6 +122,15 @@ window-rule {
     // default-column-width {}
     // open-maximized false
     // open-fullscreen true
+}
+
+window-rule {
+    match app-id="^mpv$"
+    variable-refresh-rate true
+    min-width 400
+    min-height 400    
+    max-width 1024
+    max-height 768
 }
 
 // dh steam
@@ -266,5 +277,5 @@ binds {
 
     // dh: spawn steam in cage
     // Mod+Ctrl+F12 { spawn "cage" "steam"; } // steam --bigpicture
-    Mod+Ctrl+F12 { spawn "bash" "-c" "~/.config/niri/startsteam.sh"; }
+    Mod+Ctrl+F12 { spawn "bash" "-c" "~/.config/niri/startsteam_gamescope.sh"; }
 }
