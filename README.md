@@ -1,3 +1,5 @@
+# dotfiles
+
 dotfiles for an ArchLinux desktop setup with the tiling compositors [hyprland](https://github.com/hyprwm) and [niri](https://github.com/YaLTeR/niri).
 
 ### Arch Linux
@@ -70,14 +72,14 @@ add this:
 
 Reboot!
 
-### Problems with the Steam GUI
+### Problems with the Steam GUI on hyprland (with nvidia)
 
-* When steam gets stuck in a boot loop when starting up, where you only see the login screen and then steam closes and starts again:
-** this may sound strange, but this happens (Oct 24) when there is no cursor set in your desktop environment. After I installed nwg-look instead of lxappearance the problem was gone. So set the cursor via nwg-look and steam should start.
-* Depending on the nvidia driver version and something currently unknown to me, there also seem to be other problems which cannot be solved by using gamescope or cage. Steam wont show its GUI correctly. The parameters -vgui, -bigpicture, -gamepadui, -reset, also don't help. The only way to start games is to do it directly. 
+* Boot loop when starting: set cursor and GTK theme, ie. with nwg-look.
+* GUI display errors: Even with parameters -vgui, -bigpicture, -gamepadui and/or -reset steam wont show its GUI. The only way to start games is to do it directly with the steam app and the app_id parameter (in combination with cage/gamescope). 
 
+# Installation
 
-### arch packages
+## arch packages
 
 #### base linux
 iwd
