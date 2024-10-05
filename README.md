@@ -118,6 +118,7 @@ swaylock
 gnome-themes-extra
 brightnessctl
 otf-font-awesome
+wl-clipboard
 
 #### display settings
 nwg-look
