@@ -41,23 +41,34 @@ Steam is run through [cage](https://www.hjdskes.nl/projects/cage/) a wayland kio
 ### nvidia
 
 #### with grub
+
 ```/etc/default/grub```
+
 add
-```GRUB_CMDLINE_LINUX_DEFAULT="xxx nvidia_drm.modeset=1 xxx```
+
+```GRUB_CMDLINE_LINUX_DEFAULT="xxx nvidia_drm.modeset=1 xxx"```
 
 #### with systemd-boot
 currently nothing special to do...
 
 #### load nvidia kernel modules
+
 ```/etc/mkinitcpio.conf```
+
 add this to the MODULES section:
+
 ```MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)```
 ```sudo mkinitcpio -P linux```
 
 #### blacklist nouveau
+
 ```/etc/modprobe.d/nouveau_blacklist.conf```
+
 add this:
+
 ```blacklist nouveau```
+
+Reboot!
 
 ### Problems with the Steam GUI
 
