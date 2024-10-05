@@ -29,9 +29,14 @@ input {
 layout {
 
     focus-ring {
-        off
+        // off
+        width 4
+        active-color "#7fc8ff"
+        inactive-color "#505050"
+        // active-gradient from="#80c8ff" to="#bbddff" angle=45
+        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
     }
-
+    
     border {
         off
     }
@@ -66,9 +71,9 @@ spawn-at-startup "hyprpaper" "--config" "~/.config/hyprpaper/config"
 spawn-at-startup "mako" "--config" "~/.config/mako/config"
 
 // dh: TEST! wayland
-environment {
-    ELECTRON_OZONE_PLATFORM_HINT "wayland"
-}
+// environment {
+//     ELECTRON_OZONE_PLATFORM_HINT "wayland"
+// }
 
 // prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
@@ -135,8 +140,8 @@ window-rule {
 
 // dh steam
 window-rule {
-   // match title="^steam"
-   match app-id="wlroots"   
+   match title="^steam"
+   // match app-id="wlroots"   
    match is-active=false
 
    open-fullscreen true
@@ -276,6 +281,6 @@ binds {
     Mod+M { quit; }
 
     // dh: spawn steam in cage
-    // Mod+Ctrl+F12 { spawn "cage" "steam"; } // steam --bigpicture
-    Mod+Ctrl+F12 { spawn "bash" "-c" "~/.config/niri/startsteam_gamescope.sh"; }
+    // Mod+Ctrl+F12 { spawn "cage" "--" "steam"; } // steam --bigpicture
+    Mod+Ctrl+F12 { spawn "bash" "-c" "~/.config/niri/scripts/steam.sh"; }
 }
