@@ -77,14 +77,20 @@ Reboot!
 * Boot loop when starting: set cursor and GTK theme, ie. with nwg-look.
 * GUI display errors: Even with parameters -vgui, -bigpicture, -gamepadui and/or -reset steam wont show its GUI. The only way to start games is to do it directly with the steam app and the app_id parameter (in combination with cage/gamescope). 
 
-# Installation
+# Installation 
 
-## arch packages
+### Download
+* archlinux iso: https://archlinux.org/download/
+* $ sudo dd if=archlinux.iso of=/dev/XXX bs=1M status=progress
+* $ archinstall
 
 #### base linux
-iwd
-nano
+neovim
 linux-headers
+git
+
+#### terminal
+alacritty
 
 #### nvidia
 nvidia
@@ -92,10 +98,7 @@ nvidia-utils
 lib32-nvidia-utils
 egl-wayland
 
-#### terminal
-alacritty
-
-#### window manager and addons
+#### hyprland window manager and addons
 hyprland
 hyprpm
 hyprpaper
@@ -103,16 +106,18 @@ hyprutils
 hyprwayland-scanner
 hyprcursor
 xdg-desktop-portal-hyprland
-otf-font-awesome
-brightnessctl
+
+#### niri window manager
+niri
 
 #### window manager addons
 waybar
-niri
 mako
 wofi
 swaylock
 gnome-themes-extra
+brightnessctl
+otf-font-awesome
 
 #### display settings
 nwg-look
@@ -120,9 +125,6 @@ nwg-look
 #### theme
 adwaita-cursors
 adwaita-icon-theme
-
-#### fonts
-ttf-font-awesome
 
 #### needed for hyprpm plugins
 make 
@@ -137,13 +139,14 @@ pavucontrol
 pango
 fwupd
 cmus
+ttf-font-awesome
 
 #### bluetooth
 bluez
 bluez-utils
 blueman
 
-#### tools
+#### applications / tools
 firefox
 mpv
 htop
