@@ -1,0 +1,13 @@
+# preload wallpapers
+$file1 = ~/Wallpaper/wall.jpeg
+preload = $file1
+
+# preload more wallpapers here...
+# preload = ...
+
+# set wallpaper for main display
+wallpaper = DP-1,~/Wallpaper/wall.jpeg
+
+# other settings
+splash = off
+# ipc = off
