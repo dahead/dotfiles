@@ -60,10 +60,10 @@ layout {
 }
 
 // dh use waybar
-spawn-at-startup "waybar"
+spawn-at-startup "waybar" "--config" "~/.config/waybar/config"
 spawn-at-startup "thunar" "--daemon"
-spawn-at-startup "hyprpaper"
-spawn-at-startup "mako"
+spawn-at-startup "hyprpaper" "--config" "~/.config/hyprpaper/config"
+spawn-at-startup "mako" "--config" "~/.config/mako/config"
 
 // dh: TEST! wayland
 environment {
