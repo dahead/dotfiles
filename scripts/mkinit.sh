@@ -1,0 +1,1 @@
+sudo mkinitcpio -P
