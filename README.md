@@ -7,8 +7,8 @@ dotfiles for an ArchLinux desktop setup with the tiling compositors [hyprland](h
 * https://wiki.archlinux.org/title/Archinstall
 
 ### .bashrc
-- Hyprland starts on tty1.
-- niri starts on tty2.
+- niri starts on tty1.
+- Hyprland starts on tty2.
 
 ### Hyprland
 * https://github.com/hyprwm
