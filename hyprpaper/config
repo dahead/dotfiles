@@ -1,6 +1,21 @@
 # preload wallpapers
 $file1 = ~/Wallpaper/wall.jpeg
+$file2 = ~/Wallpaper/wall-blackgirl1.jpeg
+$file3 = ~/Wallpaper/wall-blackgirl2.jpeg
+$file4 = ~/Wallpaper/wall-green1.jpeg
+$file5 = ~/Wallpaper/wall-green2.jpeg
+$file6 = ~/Wallpaper/wall-ga.jpeg
+$file7 = ~/Wallpaper/wall-phg1.jpeg
+$file8 = ~/Wallpaper/wall-phg2.jpeg
+
 preload = $file1
+preload = $file2
+preload = $file3
+preload = $file4
+preload = $file5
+preload = $file6
+preload = $file7
+preload = $file8
 
 # preload more wallpapers here...
 # preload = ...
