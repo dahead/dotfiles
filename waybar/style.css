@@ -1,6 +1,6 @@
 * {
     border: none;
-    border-radius: 0px;
+    border-radius: 22px;
     /* `ttf-font-awesome` is required to be installed for icons */
     /* font-family: "Roboto Mono Medium", Helvetica, Arial, sans-serif; */
     font-family: "Source Code Pro";
@@ -13,9 +13,8 @@
 
 window#waybar {
     /* background: transparent; */
-    background-color: rgba(0, 0, 0, 0.8);
-    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
-    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
     /* transition-property: background-color; */
     /* transition-duration: .5s; */
     /* border-radius: 0; */
@@ -86,7 +85,7 @@ window#waybar.solo {
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    margin: 0 10px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
