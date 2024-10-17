@@ -38,7 +38,7 @@ Dark mode is achieved via [Adwaita-Dark theme](https://aur.archlinux.org/package
 Thunar for example did not go dark until nwg-look was installed and configured. nwg-look creates the need gtk configs.
 
 ### Steam
-Steam is run through [cage](https://www.hjdskes.nl/projects/cage/) a wayland kiosk app. Currently (and even with cage) steam has a lot of display errors in the GUI.
+Update 10/2024: Steam currently works without cage or gamescope. It even runs better without these abstraction tools.
 
 ### nvidia
 
@@ -167,5 +167,3 @@ traceroute
 ### games
 ttf-liberation
 steam
-cage
-gamescope
