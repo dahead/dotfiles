@@ -2,7 +2,7 @@
 
 dotfiles for an ArchLinux desktop setup with the tiling compositors [hyprland](https://github.com/hyprwm) and [niri](https://github.com/YaLTeR/niri).
 
-### Arch Linux
+## Arch Linux
 * https://archlinux.org/
 * https://wiki.archlinux.org/title/Archinstall
 
@@ -35,47 +35,7 @@ dotfiles for an ArchLinux desktop setup with the tiling compositors [hyprland](h
 
 ### Dark mode
 Dark mode is achieved via [Adwaita-Dark theme](https://aur.archlinux.org/packages/adwaita-dark) and [nwg-look](https://github.com/nwg-piotr/nwg-look).
-Thunar for example did not go dark until nwg-look was installed and configured. nwg-look creates the need gtk configs.
-
-### Steam
-Update 10/2024: Steam currently works without cage or gamescope. It even runs better without these abstraction tools.
-
-### nvidia
-
-#### with grub
-
-```/etc/default/grub```
-
-add
-
-```GRUB_CMDLINE_LINUX_DEFAULT="xxx nvidia_drm.modeset=1 xxx"```
-
-#### with systemd-boot
-currently nothing special to do...
-
-#### load nvidia kernel modules
-
-```/etc/mkinitcpio.conf```
-
-add this to the MODULES section:
-
-```MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)```
-```sudo mkinitcpio -P linux```
-
-#### blacklist nouveau
-
-```/etc/modprobe.d/nouveau_blacklist.conf```
-
-add this:
-
-```blacklist nouveau```
-
-Reboot!
-
-### Problems with the Steam GUI on hyprland (with nvidia)
-
-* Boot loop when starting: set cursor and GTK theme, ie. with nwg-look.
-* GUI display errors: Even with parameters -vgui, -bigpicture, -gamepadui and/or -reset steam wont show its GUI. The only way to start games is to do it directly with the steam app and the app_id parameter (in combination with cage/gamescope). 
+Thunar for example did not go dark until ```nwg-look```, ```xdg-desktop-portal-gnome``` and ```xdg-desktop-portal-gtk``` was installed and configured. nwg-look creates the need gtk configs.
 
 # Installation 
 
