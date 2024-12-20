@@ -81,8 +81,8 @@ Reboot!
 
 ### Download
 * archlinux iso: https://archlinux.org/download/
-* $ sudo dd if=archlinux.iso of=/dev/XXX bs=1M status=progress
-* $ archinstall
+* ```sudo dd if=archlinux.iso of=/dev/XXX bs=1M status=progress```
+* ```archinstall```
 
 #### base linux
 neovim
@@ -120,13 +120,13 @@ wl-clipboard
 slurp
 grim
 
-#### display settings
-nwg-look
-
-#### theme
+#### Dark Mode, display settings, themes
+xdg-desktop-portal-gnome 
+xdg-desktop-portal-gtk
 adwaita-cursors
 adwaita-icon-theme
 gnome-themes-extra
+nwg-look
 
 #### system
 man
