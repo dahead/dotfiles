@@ -100,7 +100,6 @@ egl-wayland
 
 #### hyprland window manager and addons
 hyprland
-hyprpm
 hyprpaper
 hyprutils
 hyprwayland-scanner
@@ -115,7 +114,6 @@ waybar
 mako
 wofi
 swaylock
-gnome-themes-extra
 brightnessctl
 otf-font-awesome
 wl-clipboard
@@ -128,10 +126,7 @@ nwg-look
 #### theme
 adwaita-cursors
 adwaita-icon-theme
-
-#### needed for hyprpm plugins
-make 
-ninja
+gnome-themes-extra
 
 #### system
 man
