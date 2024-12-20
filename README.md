@@ -16,19 +16,19 @@ dotfiles for an ArchLinux desktop setup with the tiling compositors [hyprland](h
 * https://hyprland.org/plugins/
 
 ### niri
-* https://github.com/YaLTeR/niri
-* Getting started: https://github.com/YaLTeR/niri/wiki/Getting-Started
+* niri [https://github.com/YaLTeR/niri]
+* Getting started [https://github.com/YaLTeR/niri/wiki/Getting-Started]
 
-### Terminal alacritty
-* https://alacritty.org/
-* https://github.com/alacritty/alacritty
-* https://wiki.archlinux.org/title/Alacritty
+### Terminal
+* Website [https://alacritty.org/]
+* Github [https://github.com/alacritty/alacritty]
+* Wiki [https://wiki.archlinux.org/title/Alacritty]
 
 ### Toolbar
-* [waybar](https://github.com/Alexays/Waybar)
+* waybar [https://github.com/Alexays/Waybar]
 
 ### Background / wallpaper
-* [hyprpaper](https://github.com/hyprwm/hyprpaper)
+* hyprpaper [https://github.com/hyprwm/hyprpaper]
 
 ### hyprland installation
 ```sudo pacman -S gdb ninja gcc cmake meson cpio libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols cairo pango seatd libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info tomlplusplus hyprlang hyprcursor hyprwayland-scanner xcb-util-errors hyprutils slurp grim```
@@ -45,31 +45,42 @@ Thunar for example did not go dark until ```nwg-look```, ```xdg-desktop-portal-g
 * ```archinstall```
 
 #### base linux
+``
 neovim
 linux-headers
 git
+``
 
 #### terminal
+``
 alacritty
+``
 
 #### nvidia
+``
 nvidia
 nvidia-utils
 lib32-nvidia-utils
 egl-wayland
+``
 
 #### hyprland window manager and addons
+``
 hyprland
 hyprpaper
 hyprutils
 hyprwayland-scanner
 hyprcursor
 xdg-desktop-portal-hyprland
+``
 
 #### niri window manager
+``
 niri
+``
 
 #### window manager addons
+``
 waybar
 mako
 wofi
@@ -79,16 +90,20 @@ otf-font-awesome
 wl-clipboard
 slurp
 grim
+``
 
 #### Dark Mode, display settings, themes
+``
 xdg-desktop-portal-gnome 
 xdg-desktop-portal-gtk
 adwaita-cursors
 adwaita-icon-theme
 gnome-themes-extra
 nwg-look
+``
 
 #### system
+``
 man
 openssh
 pipewire
@@ -98,13 +113,18 @@ pango
 fwupd
 cmus
 ttf-font-awesome
+fzf
+``
 
 #### bluetooth
+``
 bluez
 bluez-utils
 blueman
+``
 
 #### applications / tools
+``
 firefox
 mpv
 htop
@@ -118,7 +138,10 @@ gvfs
 ffmpegthumbnailer
 net-tools
 traceroute
+``
 
 ### games
+``
 ttf-liberation
 steam
+``
