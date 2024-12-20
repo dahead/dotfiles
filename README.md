@@ -138,6 +138,7 @@ gvfs
 ffmpegthumbnailer
 net-tools
 traceroute
+imv
 ``
 
 ### games
