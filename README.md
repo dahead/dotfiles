@@ -1,23 +1,18 @@
 # dotfiles
 
-dotfiles for an ArchLinux desktop setup with the tiling compositors [hyprland](https://github.com/hyprwm) and [niri](https://github.com/YaLTeR/niri).
+dotfiles for an ArchLinux desktop setup with the tiling compositor [hyprland](https://github.com/hyprwm).
 
 ## Arch Linux
 * [Website](https://archlinux.org/)
 * [Wiki](https://wiki.archlinux.org/title/Archinstall)
 
 ### .bashrc
-- niri starts on tty1.
-- Hyprland starts on tty2.
+- Hyprland starts on tty1.
 
 ### Hyprland
 * [Github](https://github.com/hyprwm)
 * [Website](https://hyprland.org/)
 * [Plugins](https://hyprland.org/plugins/)
-
-### niri
-* [niri on Github](https://github.com/YaLTeR/niri)
-* [Getting started](https://github.com/YaLTeR/niri/wiki/Getting-Started)
 
 ### Terminal
 * [Website](https://alacritty.org/)
