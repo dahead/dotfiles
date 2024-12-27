@@ -146,3 +146,36 @@ imv
 ttf-liberation
 steam
 ``
+
+# Usage
+
+## Hyprland
+
+### Basic
+* SUPER+R start wofi launcher
+* SUPER+Q close active window
+* SUPER+E starts file manager (thunar)
+
+### Window management
+* Super+F Fullscreen active window
+* Super+Shift+R starts resize-mode with arrow-keys for active window.
+* Super+LMB move current window
+* Super+RMB resize current window
+* Super+arrow key move current window
+* Super+H/J Split/toggle split
+* Super+Shift+H/L/J/K move window up/down left/right
+* Super+1-9 Switch to workspace 1-9
+* Super+Shift+1-9 Move current window to workspace 1-9
+* Super+Mouse up/up switch current workspace
+
+### Quake style alacritty
+* CTRL+Grave opens a new alacritty window on the top 1/3 of the screen.
+
+### Multimedia keys supported
+* Audio/Video playback
+* Volume adjustment
+* Screenshots using grim
+
+### Special workspace
+* SUPER+SHIFT+S Move current window to special workspace
+* SUPER+S Show special workspace
