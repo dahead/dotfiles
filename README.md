@@ -40,9 +40,9 @@ Thunar for example did not go dark until ```nwg-look```, ```xdg-desktop-portal-g
 # Installation 
 
 ### Download
-* archlinux iso: https://archlinux.org/download/
-* ```sudo dd if=archlinux.iso of=/dev/XXX bs=1M status=progress```
-* ```archinstall```
+* [archlinux iso Download](https://archlinux.org/download/)
+* ISO to usb boot stick: ```sudo dd if=archlinux.iso of=/dev/XXX bs=1M status=progress```
+* Start the installation: ```archinstall```
 
 #### base linux
 ``
