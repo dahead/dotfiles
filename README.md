@@ -3,32 +3,32 @@
 dotfiles for an ArchLinux desktop setup with the tiling compositors [hyprland](https://github.com/hyprwm) and [niri](https://github.com/YaLTeR/niri).
 
 ## Arch Linux
-* https://archlinux.org/
-* https://wiki.archlinux.org/title/Archinstall
+* [Website](https://archlinux.org/)
+* [Wiki](https://wiki.archlinux.org/title/Archinstall)
 
 ### .bashrc
 - niri starts on tty1.
 - Hyprland starts on tty2.
 
 ### Hyprland
-* Github [https://github.com/hyprwm]
-* Website [https://hyprland.org/]
-* Plugins [https://hyprland.org/plugins/]
+* [Github](https://github.com/hyprwm)
+* [Website](https://hyprland.org/)
+* [Plugins](https://hyprland.org/plugins/)
 
 ### niri
-* niri [https://github.com/YaLTeR/niri]
-* Getting started [https://github.com/YaLTeR/niri/wiki/Getting-Started]
+* [niri on Github](https://github.com/YaLTeR/niri)
+* [Getting started](https://github.com/YaLTeR/niri/wiki/Getting-Started)
 
 ### Terminal
-* Website [https://alacritty.org/]
-* Github [https://github.com/alacritty/alacritty]
-* Wiki [https://wiki.archlinux.org/title/Alacritty]
+* [Website](https://alacritty.org/)
+* [Github](https://github.com/alacritty/alacritty)
+* [Wiki](https://wiki.archlinux.org/title/Alacritty)
 
 ### Toolbar
-* waybar [https://github.com/Alexays/Waybar]
+* [waybar](https://github.com/Alexays/Waybar)
 
 ### Background / wallpaper
-* hyprpaper [https://github.com/hyprwm/hyprpaper]
+* [hyprpaper](https://github.com/hyprwm/hyprpaper)
 
 ### hyprland installation
 ```sudo pacman -S gdb ninja gcc cmake meson cpio libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols cairo pango seatd libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info tomlplusplus hyprlang hyprcursor hyprwayland-scanner xcb-util-errors hyprutils slurp grim```
