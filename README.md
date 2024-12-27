@@ -155,9 +155,11 @@ steam
 * SUPER+R start wofi launcher
 * SUPER+Q close active window
 * SUPER+E starts file manager (thunar)
+* SUPER+M close hyprland session
 
 ### Window management
-* Super+F Fullscreen active window
+* Super+F Fullscreen active window (optional: SHIFT)
+* Super+V Float/toggle floating
 * Super+Shift+R starts resize-mode with arrow-keys for active window.
 * Super+LMB move current window
 * Super+RMB resize current window
