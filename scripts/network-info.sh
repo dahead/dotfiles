@@ -1,2 +1,0 @@
-networkctl list
-resolvectl status
