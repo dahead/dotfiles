@@ -134,6 +134,8 @@ ffmpegthumbnailer
 net-tools
 traceroute
 imv
+thunar-archive-plugin
+xarchiver
 ``
 
 ### games
@@ -141,6 +143,15 @@ imv
 ttf-liberation
 steam
 ``
+
+### Development
+
+```
+mono
+dotnet-runtime
+godot
+gimp
+```
 
 # Usage
 
