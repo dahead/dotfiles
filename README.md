@@ -53,7 +53,8 @@ alacritty
 
 #### nvidia
 ``
-nvidia
+# nvidia
+nvidia-open
 nvidia-utils
 lib32-nvidia-utils
 egl-wayland
@@ -74,17 +75,23 @@ xdg-desktop-portal-hyprland
 niri
 ``
 
+#### sway window manager
+``
+sway
+``
+
 #### window manager addons
 ``
 waybar
 mako
-wofi
+fuzzel
 swaylock
 brightnessctl
 otf-font-awesome
 wl-clipboard
 slurp
 grim
+wf-recorder
 ``
 
 #### Dark Mode, display settings, themes
@@ -109,6 +116,8 @@ fwupd
 cmus
 ttf-font-awesome
 fzf
+nmap
+nethogs
 ``
 
 #### bluetooth
@@ -136,21 +145,28 @@ traceroute
 imv
 thunar-archive-plugin
 xarchiver
+yt-dlp
+7zip
 ``
 
 ### games
 ``
 ttf-liberation
 steam
+# gamescope (needed for niri, sway)
 ``
 
 ### Development
 
 ```
-mono
-dotnet-runtime
-godot
-gimp
+# mono
+# dotnet-runtime
+# godot
+go
+# JetBrains: website
+# Sublime Text: website/aur
+# gimp
+# ollama
 ```
 
 # Usage
