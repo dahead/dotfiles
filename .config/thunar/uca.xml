@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1734213297508895-1</unique-id>
+	<command>alacritty --working-directory %f</command>
+	<description>Example for a custom action</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>mpv</icon>
+	<name>MPV all</name>
+	<submenu></submenu>
+	<unique-id>1754770939408272-1</unique-id>
+	<command>sh -c &apos;for file in &quot;$@&quot;; do mpv &quot;$file&quot; &amp; done&apos; _ %F</command>
+	<description>MPV all</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>MPV all progress</name>
+	<submenu></submenu>
+	<unique-id>1754771135641506-2</unique-id>
+	<command>sh -c &apos;for file in &quot;$@&quot;; do notify-send &quot;Opening video&quot; &quot;$(basename &quot;$file&quot;)&quot; &amp; mpv &quot;$file&quot; &amp; done&apos; _ %F</command>
+	<description>With Notifications</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<video-files/>
+</action>
+</actions>
