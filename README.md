@@ -68,6 +68,7 @@ hyprutils
 hyprwayland-scanner
 hyprcursor
 xdg-desktop-portal-hyprland
+hyprsunset
 ``
 
 #### niri window manager
