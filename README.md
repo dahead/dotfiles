@@ -11,8 +11,8 @@ dotfiles for an ArchLinux desktop setup with the tiling compositor [hyprland](ht
 
 ### Hyprland
 * [Github](https://github.com/hyprwm)
-* [Website](https://hyprland.org/)
-* [Plugins](https://hyprland.org/plugins/)
+* [Website](https://hypr.land/)
+* [Plugins](https://hypr.land/plugins)
 
 ### Terminal
 * [Website](https://alacritty.org/)
@@ -49,6 +49,7 @@ git
 #### terminal
 ``
 alacritty
+tmux
 ``
 
 #### nvidia
@@ -119,6 +120,8 @@ ttf-font-awesome
 fzf
 nmap
 nethogs
+htop
+btop
 ``
 
 #### bluetooth
@@ -132,8 +135,6 @@ blueman
 ``
 firefox
 mpv
-htop
-nvtop
 secrets
 thunar
 thunar-volman
@@ -147,7 +148,6 @@ imv
 thunar-archive-plugin
 xarchiver
 yt-dlp
-7zip
 ``
 
 ### games
