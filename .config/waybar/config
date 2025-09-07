@@ -28,12 +28,12 @@
 	    "2": "",
 	    "3": "",
 	    "4": "",
-	    "5": "",
-	    "urgent": "",
+	    "5": "", 
+  	    "urgent": "",
 	    "active": "",
 	    "default": ""
 	  },
-	  "sort-by-number": true
+	  "sort-by-number": false
 	},
 
         "niri/workspaces": {
@@ -54,9 +54,9 @@
         },
 
 	"clock": {
-		"format": "{:%Y-%m-%d | %H:%M}",
+		"format": "{:%Y-%m-%d | %H:%M:%S}",
 	        "tooltip-format": "{:%Y-%m-%d | %H:%M}",
-        	"format-alt": "{:%Y-%m-%d}"
+        	"format-alt": "{:%Y-%m-%d}",
 	},
 
 	"pulseaudio": {
@@ -118,10 +118,10 @@
 	"cpu": {
 		"interval": 5,
 		"format": "CPU {usage:2}%",
-		"on-click": "alacritty -e htop"
+		"on-click": "alacritty -e btop"
 	},
 
 	"tray": {
-		"icon-size": 20
+		"icon-size": 24
 	}
 }
