@@ -57,6 +57,7 @@
 		"format": "{:%Y-%m-%d | %H:%M:%S}",
 	        "tooltip-format": "{:%Y-%m-%d | %H:%M}",
         	"format-alt": "{:%Y-%m-%d}",
+		"interval": 10,
 	},
 
 	"pulseaudio": {
