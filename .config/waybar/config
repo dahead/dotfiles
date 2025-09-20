@@ -92,13 +92,8 @@
 		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
 		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
                 "format-alt": "bluetooth: {status}",
-                //"format-icons": {
-                //     "enabled": "",
-                //     "disabled": ""
-                //},
-		"on-click": 	  "bluetoothctl power on",
-		"on-click-right": "bluetoothctl power off",
-		"on-click-middle":	"blueman-manager",
+		"on-click":	"blueman-manager",
+		"on-click-right": "bluetoothctl show | grep -q \"Powered: yes\" && bluetoothctl power off || bluetoothctl power on",
 	},
 
 	"memory": {
