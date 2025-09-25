@@ -54,8 +54,7 @@ tmux
 
 #### nvidia
 ``
-// nvidia
-nvidia-open
+nvidia
 nvidia-utils
 lib32-nvidia-utils
 egl-wayland
@@ -70,16 +69,6 @@ hyprwayland-scanner
 hyprcursor
 xdg-desktop-portal-hyprland
 hyprsunset
-``
-
-#### niri window manager
-``
-niri
-``
-
-#### sway window manager
-``
-sway
 ``
 
 #### window manager addons
@@ -163,11 +152,11 @@ mono
 dotnet-runtime
 godot
 go
-// JetBrains: website
-// Sublime Text: website/aur
 gimp
 ollama
 ```
+
+JetBrains, Sublime via AUR/Website.
 
 # Usage
 
