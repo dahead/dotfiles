@@ -30,13 +30,13 @@ dotfiles for an ArchLinux desktop setup with the tiling compositor [hyprland](ht
 
 ### Dark mode
 Dark mode is achieved via [Adwaita-Dark theme](https://aur.archlinux.org/packages/adwaita-dark) and [nwg-look](https://github.com/nwg-piotr/nwg-look).
-Thunar for example did not go dark until ```nwg-look```, ```xdg-desktop-portal-gnome``` and ```xdg-desktop-portal-gtk``` was installed and configured. nwg-look creates the need gtk configs.
+Thunar for example did not go dark until ```nwg-look```, ```xdg-desktop-portal-gnome``` and ```xdg-desktop-portal-gtk``` was installed and configured. nwg-look creates the needed gtk configs.
 
 # Installation 
 
 ### Download
 * [archlinux iso Download](https://archlinux.org/download/)
-* ISO to usb boot stick: ```sudo dd if=archlinux.iso of=/dev/XXX bs=1M status=progress```
+* ISO to usb boot stick: ```sudo dd if=archlinux.iso of=/dev/REPLACE_THIS bs=1M status=progress```
 * Start the installation: ```archinstall```
 
 #### base linux
@@ -54,7 +54,7 @@ tmux
 
 #### nvidia
 ``
-# nvidia
+// nvidia
 nvidia-open
 nvidia-utils
 lib32-nvidia-utils
@@ -154,20 +154,19 @@ yt-dlp
 ``
 ttf-liberation
 steam
-# gamescope (needed for niri, sway)
 ``
 
 ### Development
 
 ```
-# mono
-# dotnet-runtime
-# godot
+mono
+dotnet-runtime
+godot
 go
-# JetBrains: website
-# Sublime Text: website/aur
-# gimp
-# ollama
+// JetBrains: website
+// Sublime Text: website/aur
+gimp
+ollama
 ```
 
 # Usage
@@ -197,9 +196,11 @@ go
 * CTRL+Grave opens a new alacritty window on the top 1/3 of the screen.
 
 ### Multimedia keys supported
-* Audio/Video playback
-* Volume adjustment
-* Screenshots using grim
+* Default multimedia keys on keyboard supported
+* Volume adjustment (with pamixer)
+* Brightness adjustment (with hyprsunset)
+* Screenshots (using grim and slurp)
+* Screen recordings (using wf-recorder and slurp)
 
 ### Special workspace
 * SUPER+SHIFT+S Move current window to special workspace
