@@ -1,2 +1,0 @@
-exec alacritty --title "HyprLauncher" --class "HyprLauncher" -e bash -c "cat ~/.applist | cut -d '=' -f 1 | sort -u | fzf --layout=reverse | xargs -I {} sh -c 'grep ^{} ~/.applist | cut -d '=' -f 2 | xargs hyprctl dispatch exec'; ./Updater"
-# exec alacritty --title "HyprLauncher" --class "HyprLauncher" -e bash -c "cat ~/.applist | cut -d '=' -f 1 | sort -u | fzf --layout=reverse | xargs -I {} sh -c 'grep ^{} ~/.applist | cut -d '=' -f 2 | xargs hyprctl dispatch exec:'"
