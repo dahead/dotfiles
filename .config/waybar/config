@@ -98,7 +98,9 @@
 
 	"memory": {
 		"interval": 5,
-		"format": "Mem {}%"
+		// "format": "Mem {}%"
+		"format": "MEM {}%",
+		"tooltip-format": "{used:0.1f}G/{total:0.1f}G "
 	},
 
 
