@@ -156,6 +156,15 @@ gimp
 ollama
 ```
 
+## Virtual Machines
+
+```
+qemu-full
+virt-manager
+dnsmasq
+iptables-nft
+```
+
 JetBrains, Sublime via AUR/Website.
 
 # Usage
