@@ -160,6 +160,7 @@ ollama
 
 ```
 qemu-full
+libvirt
 virt-manager
 dnsmasq
 iptables-nft
