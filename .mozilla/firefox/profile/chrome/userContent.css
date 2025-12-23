@@ -1,0 +1,59 @@
+/*
+ * Hacker News Dark Theme for Firefox
+ * 
+ * Installation:
+ * 1. Type about:config in Firefox address bar
+ * 2. Search for: toolkit.legacyUserProfileCustomizations.stylesheets
+ * 3. Set to: true (double-click to toggle)
+ * 4. Type about:support in address bar
+ * 5. Find "Profile Folder", click "Open Folder"
+ * 6. Create folder named "chrome" if it doesn't exist
+ * 7. Save this file as: userContent.css in the chrome folder
+ *    Full path: /home/user/.mozilla/firefox/abcdefgh.default-release/chrome/userContent.css
+ * 8. Restart Firefox
+ */
+
+@-moz-document domain("news.ycombinator.com") {
+    body, table, td, tr {
+        background-color: #1c1c1e !important;
+        color: #e5e5e7 !important;
+    }
+    
+    .pagetop, .pagetop a {
+        color: #e5e5e7 !important;
+    }
+    
+    a {
+        color: #bf5af2 !important;
+    }
+    
+    a:visited {
+        color: #ff6ac1 !important;
+    }
+    
+    .admin a, .admin a:visited {
+        color: #ff375f !important;
+    }
+    
+    .subtext, .subtext a, .hnuser {
+        color: #98989d !important;
+    }
+    
+    .comment, .comment *, .commtext, .commtext * {
+        color: #e5e5e7 !important;
+    }
+
+    font[color="#000000"], font[color="black"] {
+        color: #e5e5e7 !important;
+    }
+    
+    textarea[name="text"] {
+    background-color: #2c2c2e !important;
+    color: #e5e5e7 !important;
+    border: 1px solid #48484a !important;
+    }
+    
+    .comhead, .comhead a {
+        color: #98989d !important;
+    }
+}
