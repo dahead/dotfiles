@@ -179,27 +179,27 @@ JetBrains, Sublime via AUR/Website.
 * SUPER+M close hyprland session
 
 ### Window management
-* Super+F Fullscreen active window (optional: SHIFT)
-* Super+V Float/toggle floating
-* Super+Shift+R starts resize-mode with arrow-keys for active window.
-* Super+LMB move current window
-* Super+RMB resize current window
-* Super+arrow key move current window
-* Super+H/J Split/toggle split
-* Super+Shift+H/L/J/K move window up/down left/right
-* Super+1-9 Switch to workspace 1-9
-* Super+Shift+1-9 Move current window to workspace 1-9
-* Super+Mouse up/up switch current workspace
+* SUPER+F Fullscreen active window (optional: SHIFT)
+* SUPER+V Float/toggle floating
+* SUPER+Shift+R starts resize-mode with arrow-keys for active window.
+* SUPER+LMB move current window
+* SUPER+RMB resize current window
+* SUPER+arrow key move current window
+* SUPER+H/J Split/toggle split
+* SUPER+Shift+H/L/J/K move window up/down left/right
+* SUPER+1-9 Switch to workspace 1-9
+* SUPER+Shift+1-9 Move current window to workspace 1-9
+* SUPER+Mouse up/up switch current workspace
 
 ### Quake style alacritty
 * CTRL+Grave opens a new alacritty window on the top 1/3 of the screen.
 
 ### Multimedia keys supported
 * Default multimedia keys on keyboard supported
-* Volume adjustment (with pamixer)
+* SUPER+F11/SUPER+F12 Volume adjustment (with pamixer)
 * Brightness adjustment (with hyprsunset)
-* Screenshots (using grim and slurp)
-* Screen recordings (using wf-recorder and slurp)
+* PRINT Screenshots (using grim and slurp)
+* SUPER+PRINT Screen recordings (using wf-recorder and slurp)
 
 ### Special workspace
 * SUPER+SHIFT+S Move current window to special workspace
