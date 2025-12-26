@@ -197,9 +197,10 @@ JetBrains, Sublime via AUR/Website.
 ### Multimedia keys supported
 * Default multimedia keys on keyboard supported
 * SUPER+F11/SUPER+F12 Volume adjustment (with pamixer)
-* Brightness adjustment (with hyprsunset)
-* PRINT Screenshots (using grim and slurp)
-* SUPER+PRINT Screen recordings (using wf-recorder and slurp)
+* SUPER+F9/SUPER+F10 Brightness adjustment up/down (with hyprsunset)
+* PRINT Screenshot to clipboard (using grim and slurp)
+* SHIFT+PRINT Screenshot to file
+* SHIFT+PRINT Screen recordings (using wf-recorder and slurp, see scripts/record.sh)
 
 ### Special workspace
 * SUPER+SHIFT+S Move current window to special workspace
