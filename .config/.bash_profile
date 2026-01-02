@@ -7,9 +7,11 @@
 export GTK_THEME=Adwaita-dark
 
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-  exec Hyprland
+  # exec Hyprland
+  exec start-hyprland
 fi
 
 [ "$(tty)" = "/dev/tty2" ] && exec niri
 
 [ "$(tty)" = "/dev/tty3" ] && exec sway --unsupported-gpu
+. "$HOME/.cargo/env"
