@@ -14,6 +14,7 @@
 		"bluetooth",
 		"memory",
 		"cpu",
+		"custom/disk-gauge",
 		"network",
 		"tray",
 		"clock"
@@ -121,5 +122,14 @@
 
 	"tray": {
 		"icon-size": 24
+	},
+
+	"custom/disk-gauge": {
+    		"exec": "~/.config/waybar/disk-gauge.sh",
+		"return-type": "json",
+		"interval": 30,
+		"format": "  {}",
+		"tooltip": true,
+		"markup": true
 	}
 }
