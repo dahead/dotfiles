@@ -153,7 +153,7 @@ dotnet-runtime
 godot
 go
 gimp
-ollama
+# llama.cpp : https://wiki.archlinux.org/title/Llama.cpp
 ```
 
 ## Virtual Machines
